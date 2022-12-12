@@ -16,7 +16,7 @@
         <div class="wrapper">
             <header class="header" id="home">
                 <div class="container header__container">
-                    <a class="logo" href="#home">
+                    <a class="logo" href="#home" tabindex="1">
                         <svg class="logo__icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0 30.6C5.63333 30.6 10.2 26.0332 10.2 20.4C10.2 14.7667 5.63333 10.2 0 10.2V17.3399C1.68998 17.3399 3.05998 18.7099 3.05998 20.4C3.05998 22.09 1.68998 23.46 0 23.46V30.6Z"
@@ -38,51 +38,53 @@
                         <div class="nav__body">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" style="--order: 1">Auctions</a>
+                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" tabindex="1" style="--order: 1">Auctions</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" style="--order: 2">Roadmap</a>
+                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" tabindex="1" style="--order: 2">Roadmap</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" style="--order: 3">Discover</a>
+                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" tabindex="1" style="--order: 3">Discover</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" style="--order: 4">Community</a>
+                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" tabindex="1" style="--order: 4"
+                                        >Community</a
+                                    >
                                 </li>
                             </ul>
                         </div>
                     </nav>
                     <div class="header__buttons">
-                        <a class="btn btn--secondary" href="#">Contact</a>
-                        <button type="button" class="btn btn--primary" data-name="popup-account">My account</button>
+                        <a class="btn btn--secondary" href="#" tabindex="1">Contact</a>
+                        <button type="button" class="btn btn--primary" data-name="popup-account" tabindex="1">My account</button>
                     </div>
                 </div>
             </header>
             <div class="popup">
                 <div class="container popup__container">
-                    <span class="popup__icon">X</span>
+                    <button type="button" class="popup__button" tabindex="3">X</button>
                     <h2 class="title title--popup">Login</h2>
                     <form action="#" class="form form--login">
                         <div class="form__item form__item--popup">
                             <label class="form__label form__label--popup" for="">Email Addres</label>
-                            <input class="form__input form__input--popup _req _email" type="email" name="email" required />
+                            <input class="form__input form__input--popup _req _email" type="email" name="email" tabindex="2" required />
                         </div>
                         <div class="form__item form__item--popup">
                             <label class="form__label form__label--popup" for="">Password</label>
-                            <input class="form__input form__input--popup _req" type="password" name="password" required />
+                            <input class="form__input form__input--popup _req" type="password" name="password" tabindex="2" required />
                         </div>
                         <div class="form__item form__item--popup">
                             <label class="form__label form__label--popup" for="checkbox">
-                                <input class="form__input form__input--popup" type="checkbox" name="checkbox" id="checkbox" />
+                                <input class="form__input form__input--popup" type="checkbox" name="checkbox" tabindex="2" id="checkbox" />
                                 Remember me</label
                             >
-                            <a class="form__link" href="#">Forgot password?</a>
+                            <a class="form__link" href="#" tabindex="2">Forgot password?</a>
                         </div>
                         <div class="form__item form__item--popup">
-                            <button class="btn btn--primary btn--primary-popup" type="submit">Login</button>
+                            <button class="btn btn--primary btn--primary-popup" type="submit" tabindex="2">Login</button>
                         </div>
                         <div class="form__item form__item--popup">
-                            <a class="form__link" href="#">Don't have an account?</a>
+                            <a class="form__link" href="#" tabindex="2">Don't have an account?</a>
                         </div>
                     </form>
                 </div>

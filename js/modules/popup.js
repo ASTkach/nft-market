@@ -20,7 +20,7 @@ const openPopup = () => {
     });
 
     popup.addEventListener("click", ({ target }) => {
-        if (!target.closest(".popup__container") || target.closest(".popup__icon")) {
+        if (!target.closest(".popup__container") || target.closest(".popup__button")) {
             popupContainer.classList.remove("_active-popup");
             setTimeout(() => {
                 popup.classList.remove("_active-popup");

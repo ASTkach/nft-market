@@ -6,7 +6,7 @@ const uploadFiles = () => {
     const removeActiveLink = () => buttons.forEach((btn) => btn.classList.remove("_active"));
 
     const initialNftList = () => {
-        getNFT("../../json/photography1.json");
+        getNFT("../json/photography1.json");
     };
     initialNftList();
 
@@ -28,7 +28,7 @@ const uploadFiles = () => {
 
         switch (buttonId) {
             case "photo":
-                getNFT("../../json/photography1.json");
+                getNFT("../json/photography1.json");
                 break;
             case "games":
                 getNFT("https://rickandmortyapi.com/api/character/[1,22,3,23,17,111]");
@@ -43,7 +43,7 @@ const uploadFiles = () => {
         loadButton.addEventListener("click", () => {
             switch (button.classList.contains("_active") && button.id) {
                 case "photo":
-                    getNFT("../../json/photography2.json");
+                    getNFT("../json/photography2.json");
                     break;
                 case "games":
                     getNFT("https://rickandmortyapi.com/api/character/[2,44,6,46,34,222]");
