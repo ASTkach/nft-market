@@ -552,7 +552,7 @@ ul {
     -ms-transform: translateY(0);
     transform: translateY(0);
 }
-.popup__icon {
+.popup__button {
     position: absolute;
     top: 0.625rem;
     right: 0.625rem;
@@ -562,6 +562,8 @@ ul {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -1171,6 +1173,9 @@ ul {
 
 /* =========== FORM ========== */
 
+.form * {
+    outline: none;
+}
 .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1178,8 +1183,8 @@ ul {
     font-family: var(--secondary-family);
     border-radius: 1rem;
 }
-.form * {
-    outline: none;
+.form--login *:focus {
+    box-shadow: 0px 0px 0px 2px var(--popup-bg-color), 0px 0px 0px 4px hsl(241, 68%, 57%);
 }
 .form--login {
     -webkit-box-orient: vertical;
@@ -1553,7 +1558,7 @@ ul {
     top: 50%;
     width: 5.81%;
     height: 75.83%;
-    background: url("../../img/promo/h1-element1.svg") no-repeat;
+    background: url("../img/promo/h1-element1.svg") no-repeat;
     background-size: cover;
 }
 .title__icon--secondary::before {
@@ -1561,7 +1566,7 @@ ul {
     bottom: -11%;
     width: 9%;
     height: 51.67%;
-    background: url("../../img/promo/h1-element2.svg") no-repeat;
+    background: url("../img/promo/h1-element2.svg") no-repeat;
     background-size: cover;
 }
 
