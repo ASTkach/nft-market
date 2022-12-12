@@ -1,0 +1,9 @@
+:root {
+    --basic-color: 236, 54%, 5%;
+    --secondary-color: 0, 0%, 100%;
+    --third-color: 235, 25%, 20%;
+    --section-item-cursus-bg: linear-gradient(188.08deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 93.79%), #060714;
+    --price-color: hsl(242, 100%, 65%);
+    --price-bg-color-lightenss: 17%;
+    --bg-image: url("../img/bg/bg-dark.svg");
+}

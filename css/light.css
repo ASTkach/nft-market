@@ -1,0 +1,10 @@
+:root {
+    --basic-color: 0, 0%, 100%;
+    --secondary-color: 236, 54%, 5%;
+    --third-color: 226, 18%, 77%;
+    --section-item-cursus-bg: hsl(225, 18%, 96%);
+    --slider-item-border-color: transparent;
+    --price-color: hsl(241, 68%, 47%);
+    --price-bg-color-lightenss: 87%;
+    --bg-image: url("../img/bg/bg-light.svg");
+}

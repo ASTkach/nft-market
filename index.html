@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NFT Market</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: light)" />
+        <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)" />
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header" id="home">
+                <div class="container header__container">
+                    <a class="logo" href="#home">
+                        <svg class="logo__icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 30.6C5.63333 30.6 10.2 26.0332 10.2 20.4C10.2 14.7667 5.63333 10.2 0 10.2V17.3399C1.68998 17.3399 3.05998 18.7099 3.05998 20.4C3.05998 22.09 1.68998 23.46 0 23.46V30.6Z"
+                                fill="#76DECC"
+                            />
+                            <path
+                                d="M33.9997 13.6001C32.2567 13.0479 30.4005 12.75 28.4747 12.75C18.3816 12.75 10.1997 20.9321 10.1997 31.025C10.1997 32.0381 10.2821 33.0319 10.4406 34H21.7955C21.3901 33.0913 21.1648 32.0845 21.1648 31.025C21.1648 26.9878 24.4375 23.715 28.4747 23.715C30.6812 23.715 32.6593 24.6927 33.9997 26.2384V13.6001Z"
+                                fill="#EA6CBC"
+                            />
+                            <path
+                                d="M1.79346 0C2.63911 7.64992 9.12477 13.6001 17.0001 13.6001C24.8753 13.6001 31.361 7.64992 32.2067 0H21.2649C20.5894 1.69339 18.9344 2.88999 17.0001 2.88999C15.0657 2.88999 13.4108 1.69339 12.7352 0H1.79346Z"
+                                fill="#2A27C9"
+                            />
+                        </svg>
+                        <p class="logo__text">NFT Market</p>
+                    </a>
+                    <nav class="nav">
+                        <div class="nav__icon"><span class="nav__icon-line"></span></div>
+                        <div class="nav__body">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" style="--order: 1">Auctions</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" style="--order: 2">Roadmap</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" style="--order: 3">Discover</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#" target="_blank" rel="nofollow noopener" style="--order: 4">Community</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__buttons">
+                        <a class="btn btn--secondary" href="#">Contact</a>
+                        <button type="button" class="btn btn--primary" data-name="popup-account">My account</button>
+                    </div>
+                </div>
+            </header>
+            <div class="popup">
+                <div class="container popup__container">
+                    <span class="popup__icon">X</span>
+                    <h2 class="title title--popup">Login</h2>
+                    <form action="#" class="form form--login">
+                        <div class="form__item form__item--popup">
+                            <label class="form__label form__label--popup" for="">Email Addres</label>
+                            <input class="form__input form__input--popup _req _email" type="email" name="email" required />
+                        </div>
+                        <div class="form__item form__item--popup">
+                            <label class="form__label form__label--popup" for="">Password</label>
+                            <input class="form__input form__input--popup _req" type="password" name="password" required />
+                        </div>
+                        <div class="form__item form__item--popup">
+                            <label class="form__label form__label--popup" for="checkbox">
+                                <input class="form__input form__input--popup" type="checkbox" name="checkbox" id="checkbox" />
+                                Remember me</label
+                            >
+                            <a class="form__link" href="#">Forgot password?</a>
+                        </div>
+                        <div class="form__item form__item--popup">
+                            <button class="btn btn--primary btn--primary-popup" type="submit">Login</button>
+                        </div>
+                        <div class="form__item form__item--popup">
+                            <a class="form__link" href="#">Don't have an account?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <section class="section section--promo">
+                <div class="container">
+                    <div class="section__container section__container--promo">
+                        <fieldset class="switcher">
+                            <legend class="switcher__legend">Schem</legend>
+                            <input
+                                class="switcher__radio switcher__radio--light _icon-sun"
+                                type="radio"
+                                name="color-scheme"
+                                value="light"
+                                aria-label="Light"
+                            />
+                            <input
+                                class="switcher__radio switcher__radio--auto _icon-systemic"
+                                type="radio"
+                                name="color-scheme"
+                                value="auto"
+                                aria-label="Systemic"
+                                checked
+                            />
+                            <input
+                                class="switcher__radio switcher__radio--dark _icon-moon"
+                                type="radio"
+                                name="color-scheme"
+                                value="dark"
+                                aria-label="Dark"
+                            />
+                            <div class="switcher__status"></div>
+                        </fieldset>
+                        <div class="section__text-wrap section__text-wrap--promo">
+                            <p class="section__text section__text--overline">Non Fungible Tokens</p>
+                            <h1 class="title title--promo">
+                                <span class="title__icon title__icon--first">A new NFT</span>
+                                <span class="title__icon title__icon--secondary">Experience</span>
+                            </h1>
+                            <p class="section__text section__text--promo">Discover, collect and sell</p>
+                        </div>
+                        <div class="section__search">
+                            <form class="form form--search" action="" method="get">
+                                <div class="form__item form__item--input">
+                                    <input class="form__input form__input--search" type="search" required />
+                                    <label class="form__label form__label--search">
+                                        <span class="form__label-large">Items, collections and creators</span>
+                                        <span class="form__label-small">Search</span>
+                                    </label>
+                                </div>
+                                <div class="form__item form__item--select">
+                                    <select required class="form__select">
+                                        <option selected value=""></option>
+                                        <option value="New">New New</option>
+                                        <option value="Top">Top Top</option>
+                                        <option value="Sale">Sale Sale</option>
+                                    </select>
+                                    <label class="form__label form__label--select">Category</label>
+                                </div>
+                                <button class="form__button form__button--search _icon-search" type="submit"></button>
+                            </form>
+                        </div>
+                        <div class="section__logotypes">
+                            <img
+                                class="section__logo"
+                                src="img/promo/logotypes/ritter-sport.png"
+                                alt="ritter sport logotype"
+                                width="85"
+                                height="45"
+                            />
+                            <img class="section__logo" src="img/promo/logotypes/nike.png" alt="nike logotype" width="85" height="45" />
+                            <img class="section__logo" src="img/promo/logotypes/adidas.png" alt="adidas logotype" width="85" height="45" />
+                            <img class="section__logo" src="img/promo/logotypes/new-holland.png" alt="new holland logotype" width="85" height="45" />
+                        </div>
+                        <div class="section__icons">
+                            <div class="section__icon-wrap section__icon-wrap--promo" style="--color-hue: 238">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--promo"
+                                        src="img/promo/icons/icon1.png"
+                                        alt="#"
+                                        style="--order: 1"
+                                        width="89"
+                                        height="89"
+                                    />
+                                    <span class="section__tooltip">Click on me!</span>
+                                </a>
+                                <p class="section__icon-text section__icon-text--promo">2.55 ETH</p>
+                            </div>
+                            <div class="section__icon-wrap section__icon-wrap--promo" style="--color-hue: 281">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--promo"
+                                        src="img/promo/icons/icon2.png"
+                                        alt="#"
+                                        style="--order: 6"
+                                        width="89"
+                                        height="89"
+                                    />
+                                    <span class="section__tooltip">Click on me!</span>
+                                </a>
+                                <p class="section__icon-text section__icon-text--promo">2.55 ETH</p>
+                            </div>
+                            <div class="section__icon-wrap section__icon-wrap--promo" style="--color-hue: 306">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--promo"
+                                        src="img/promo/icons/icon3.png"
+                                        alt="#"
+                                        style="--order: 4"
+                                        width="89"
+                                        height="89"
+                                    />
+                                    <span class="section__tooltip">Click on me!</span>
+                                </a>
+                                <p class="section__icon-text section__icon-text--promo">2.55 ETH</p>
+                            </div>
+                            <div class="section__icon-wrap section__icon-wrap--promo" style="--color-hue: 197">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--promo"
+                                        src="img/promo/icons/icon4.png"
+                                        alt="#"
+                                        style="--order: 3"
+                                        width="89"
+                                        height="89"
+                                    />
+                                    <span class="section__tooltip">Click on me!</span>
+                                </a>
+                                <p class="section__icon-text section__icon-text--promo">2.55 ETH</p>
+                            </div>
+                            <div class="section__icon-wrap section__icon-wrap--promo" style="--color-hue: 223">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--promo"
+                                        src="img/promo/icons/icon5.png"
+                                        alt="#"
+                                        style="--order: 5"
+                                        width="89"
+                                        height="89"
+                                    />
+                                    <span class="section__tooltip">Click on me!</span>
+                                </a>
+                                <p class="section__icon-text section__icon-text--promo">2.55 ETH</p>
+                            </div>
+                            <div class="section__icon-wrap section__icon-wrap--promo" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--promo"
+                                        src="img/promo/icons/icon6.png"
+                                        alt="#"
+                                        style="--order: 2"
+                                        width="89"
+                                        height="89"
+                                    />
+                                    <span class="section__tooltip">Click on me!</span>
+                                </a>
+                                <p class="section__icon-text section__icon-text--promo">2.55 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--latest">
+                <div class="section__container section__container--latest">
+                    <h2 class="title title--latest">Latest live auctions</h2>
+                    <div class="slider slider--latest swiper">
+                        <div class="slider__wrapper swiper-wrapper">
+                            <div class="slider__slide slider__slide--latest swiper-slide">
+                                <div class="card card--latest">
+                                    <a class="card__img-link card__img-link--latest" href="#" style="--color-hue: 240">
+                                        <img class="card__img card__img--latest" src="img/latest/image1.svg" alt="#" width="400" height="520" />
+                                    </a>
+                                    <div class="card__content card__content--latest">
+                                        <div class="card__item card__item--latest">
+                                            <a class="card__link card__link--latest" href="#" target="_blank" rel="nofollow noopener"
+                                                >Vulputate felis purus viverra morbi facilisi eget</a
+                                            >
+                                            <span class="card__price card__price--latest">3.19 ETH</span>
+                                            <p class="card__time card__time--latest _icon-timer">2:41 min left</p>
+                                        </div>
+                                        <div class="card__item card__item--latest">
+                                            <div class="card__icons">
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon1.png"
+                                                    alt="#"
+                                                    style="--order: 0"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon2.png"
+                                                    alt="#"
+                                                    style="--order: 1"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon3.png"
+                                                    alt="#"
+                                                    style="--order: 2"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon4.png"
+                                                    alt="#"
+                                                    style="--order: 3"
+                                                />
+                                            </div>
+                                            <p class="card__text card__text--latest">35 people are bidding</p>
+                                            <div class="card__likes">
+                                                <svg
+                                                    class="card__likes-icon"
+                                                    width="18"
+                                                    height="16"
+                                                    viewBox="0 0 18 16"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                    />
+                                                </svg>
+                                                <span class="card__likes-number">120</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__slide slider__slide--latest swiper-slide">
+                                <div class="card card--latest">
+                                    <a class="card__img-link card__img-link--latest" href="#" style="--color-hue: 292">
+                                        <img class="card__img card__img--latest" src="img/latest/image2.svg" alt="#" width="400" height="520" />
+                                    </a>
+                                    <div class="card__content card__content--latest">
+                                        <div class="card__item card__item--latest">
+                                            <a class="card__link card__link--latest" href="#" target="_blank" rel="nofollow noopener"
+                                                >Dui accumsan leo vestibulum ornare eu</a
+                                            >
+                                            <span class="card__price card__price--latest">1.11 ETH</span>
+                                            <p class="card__time card__time--latest _icon-timer">22:59 min left</p>
+                                        </div>
+                                        <div class="card__item card__item--latest">
+                                            <div class="card__icons">
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon5.png"
+                                                    alt="#"
+                                                    style="--order: 0"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon6.png"
+                                                    alt="#"
+                                                    style="--order: 1"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon7.png"
+                                                    alt="#"
+                                                    style="--order: 2"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon8.png"
+                                                    alt="#"
+                                                    style="--order: 3"
+                                                />
+                                            </div>
+                                            <p class="card__text card__text--latest">101 people are bidding</p>
+                                            <div class="card__likes">
+                                                <svg
+                                                    class="card__likes-icon"
+                                                    width="18"
+                                                    height="16"
+                                                    viewBox="0 0 18 16"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                    />
+                                                </svg>
+                                                <span class="card__likes-number">570</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__slide slider__slide--latest swiper-slide">
+                                <div class="card card--latest">
+                                    <a class="card__img-link card__img-link--latest" href="#" style="--color-hue: 243">
+                                        <img class="card__img card__img--latest" src="img/latest/image3.svg" alt="#" width="400" height="520" />
+                                    </a>
+                                    <div class="card__content card__content--latest">
+                                        <div class="card__item card__item--latest">
+                                            <a class="card__link card__link--latest" href="#" target="_blank" rel="nofollow noopener"
+                                                >Senectus adipiscing nascetur accumsan etiam</a
+                                            >
+                                            <span class="card__price card__price--latest">1.63 ETH</span>
+                                            <p class="card__time card__time--latest _icon-timer">37:01 min left</p>
+                                        </div>
+                                        <div class="card__item card__item--latest">
+                                            <div class="card__icons">
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon9.png"
+                                                    alt="#"
+                                                    style="--order: 0"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon10.png"
+                                                    alt="#"
+                                                    style="--order: 1"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon11.png"
+                                                    alt="#"
+                                                    style="--order: 2"
+                                                />
+                                            </div>
+                                            <p class="card__text card__text--latest">12 people are bidding</p>
+                                            <div class="card__likes">
+                                                <svg
+                                                    class="card__likes-icon"
+                                                    width="18"
+                                                    height="16"
+                                                    viewBox="0 0 18 16"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                    />
+                                                </svg>
+                                                <span class="card__likes-number">98</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__slide slider__slide--latest swiper-slide">
+                                <div class="card card--latest">
+                                    <a class="card__img-link card__img-link--latest" href="#" style="--color-hue: 41">
+                                        <img class="card__img card__img--latest" src="img/latest/image4.svg" alt="#" width="400" height="520" />
+                                    </a>
+                                    <div class="card__content card__content--latest">
+                                        <div class="card__item card__item--latest">
+                                            <a class="card__link card__link--latest" href="#" target="_blank" rel="nofollow noopener"
+                                                >Mattis at diam lorem nisl nam sed sociis</a
+                                            >
+                                            <span class="card__price card__price--latest">2.55 ETH</span>
+                                            <p class="card__time card__time--latest _icon-timer">12:15 min left</p>
+                                        </div>
+                                        <div class="card__item card__item--latest">
+                                            <div class="card__icons">
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon12.png"
+                                                    alt="#"
+                                                    style="--order: 0"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon13.png"
+                                                    alt="#"
+                                                    style="--order: 1"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon14.png"
+                                                    alt="#"
+                                                    style="--order: 2"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon15.png"
+                                                    alt="#"
+                                                    style="--order: 3"
+                                                />
+                                            </div>
+                                            <p class="card__text card__text--latest">19 people are bidding</p>
+                                            <div class="card__likes">
+                                                <svg
+                                                    class="card__likes-icon"
+                                                    width="18"
+                                                    height="16"
+                                                    viewBox="0 0 18 16"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                    />
+                                                </svg>
+                                                <span class="card__likes-number">54</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__slide slider__slide--latest swiper-slide">
+                                <div class="card card--latest">
+                                    <a class="card__img-link card__img-link--latest" href="#" style="--color-hue: 272">
+                                        <img class="card__img card__img--latest" src="img/latest/image5.svg" alt="#" width="400" height="520" />
+                                    </a>
+                                    <div class="card__content card__content--latest">
+                                        <div class="card__item card__item--latest">
+                                            <a class="card__link card__link--latest" href="#" target="_blank" rel="nofollow noopener"
+                                                >Tristique diam a, enim, eros tellus. Viverra etiam</a
+                                            >
+                                            <span class="card__price card__price--latest">2.55 ETH</span>
+                                            <p class="card__time card__time--latest _icon-timer">57:15 min left</p>
+                                        </div>
+                                        <div class="card__item card__item--latest">
+                                            <div class="card__icons">
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon16.png"
+                                                    alt="#"
+                                                    style="--order: 0"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon17.png"
+                                                    alt="#"
+                                                    style="--order: 1"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon18.png"
+                                                    alt="#"
+                                                    style="--order: 2"
+                                                />
+                                                <img
+                                                    class="card__icon card__icon--latest"
+                                                    src="img/latest/customers/icon19.png"
+                                                    alt="#"
+                                                    style="--order: 3"
+                                                />
+                                            </div>
+                                            <p class="card__text card__text--latest">14 people are bidding</p>
+                                            <div class="card__likes">
+                                                <svg
+                                                    class="card__likes-icon"
+                                                    width="18"
+                                                    height="16"
+                                                    viewBox="0 0 18 16"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                    />
+                                                </svg>
+                                                <span class="card__likes-number">54</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__control">
+                            <div class="slider__button-prev slider__button-prev--latest swiper-button-prev _icon-arrow"></div>
+                            <div class="slider__button-next slider__button-next--latest swiper-button-next _icon-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--sapien">
+                <div class="container">
+                    <div class="section__container section__container--sapien">
+                        <div class="section__block">
+                            <p class="section__text section__text--overline">Overline</p>
+                            <h2 class="title title--sapien">Sapien ipsum scelerisque convallis fusce</h2>
+                            <p class="section__text">
+                                Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.
+                            </p>
+                            <div class="section__buttons">
+                                <a class="btn btn--primary" href="#" target="_blank" rel="nofollow noopener">Get started</a>
+                                <a class="btn btn--secondary" href="#" target="_blank" rel="nofollow noopener">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="section__image-wrap section__image-wrap--sapien">
+                            <img class="section__img" src="img/sapien.png" alt="#" width="684" height="616" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--more">
+                <div class="container">
+                    <div class="section__container section__container--more">
+                        <div class="section__item section__item--more">
+                            <div class="section__item-inner section__item-inner--more">
+                                <h2 class="title title--more">Check out the hottest Sale offers</h2>
+                                <div class="slider slider--more swiper">
+                                    <div class="slider__wrapper slider__wrapper--more swiper-wrapper">
+                                        <div class="slider__slide slider__slide--more swiper-slide">
+                                            <div class="card">
+                                                <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 220">
+                                                    <img
+                                                        class="card__img card__img--more"
+                                                        src="img/more/slide1.png"
+                                                        alt="#"
+                                                        width="212"
+                                                        height="355"
+                                                        loading="lazy"
+                                                    />
+                                                </a>
+                                                <div class="card__content card__content--more">
+                                                    <div class="card__item card__item--more">
+                                                        <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                            >Fames habitasse risus ultricies tortor sit</a
+                                                        >
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__time _icon-timer">22:59</p>
+                                                        <span class="card__price card__price--more">2.55 ETH</span>
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__text card__text--more">101 people are bidding</p>
+                                                        <svg
+                                                            class="card__likes-icon"
+                                                            width="18"
+                                                            height="16"
+                                                            viewBox="0 0 18 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                            />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__slide slider__slide--more swiper-slide">
+                                            <div class="card">
+                                                <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 183">
+                                                    <img
+                                                        class="card__img card__img--more"
+                                                        src="img/more/slide2.png"
+                                                        alt="#"
+                                                        width="212"
+                                                        height="355"
+                                                        loading="lazy"
+                                                    />
+                                                </a>
+                                                <div class="card__content card__content--more">
+                                                    <div class="card__item card__item--more">
+                                                        <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                            >Fames habitasse risus ultricies tortor sit</a
+                                                        >
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__time _icon-timer">22:59</p>
+                                                        <span class="card__price card__price--more">2.55 ETH</span>
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__text card__text--more">101 people are bidding</p>
+                                                        <svg
+                                                            class="card__likes-icon"
+                                                            width="18"
+                                                            height="16"
+                                                            viewBox="0 0 18 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                            />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__slide slider__slide--more swiper-slide">
+                                            <div class="card">
+                                                <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 220">
+                                                    <img
+                                                        class="card__img card__img--more"
+                                                        src="img/more/slide1.png"
+                                                        alt="#"
+                                                        width="212"
+                                                        height="355"
+                                                        loading="lazy"
+                                                    />
+                                                </a>
+                                                <div class="card__content card__content--more">
+                                                    <div class="card__item card__item--more">
+                                                        <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                            >Fames habitasse risus ultricies tortor sit</a
+                                                        >
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__time _icon-timer">22:59</p>
+                                                        <span class="card__price card__price--more">2.55 ETH</span>
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__text card__text--more">101 people are bidding</p>
+                                                        <svg
+                                                            class="card__likes-icon"
+                                                            width="18"
+                                                            height="16"
+                                                            viewBox="0 0 18 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                            />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__slide slider__slide--more swiper-slide">
+                                            <div class="card">
+                                                <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 183">
+                                                    <img
+                                                        class="card__img card__img--more"
+                                                        src="img/more/slide2.png"
+                                                        alt="#"
+                                                        width="212"
+                                                        height="355"
+                                                        loading="lazy"
+                                                    />
+                                                </a>
+                                                <div class="card__content card__content--more">
+                                                    <div class="card__item card__item--more">
+                                                        <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                            >Fames habitasse risus ultricies tortor sit</a
+                                                        >
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__time _icon-timer">22:59</p>
+                                                        <span class="card__price card__price--more">2.55 ETH</span>
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__text card__text--more">101 people are bidding</p>
+                                                        <svg
+                                                            class="card__likes-icon"
+                                                            width="18"
+                                                            height="16"
+                                                            viewBox="0 0 18 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                            />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__slide slider__slide--more swiper-slide">
+                                            <div class="card">
+                                                <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 220">
+                                                    <img
+                                                        class="card__img card__img--more"
+                                                        src="img/more/slide1.png"
+                                                        alt="#"
+                                                        width="212"
+                                                        height="355"
+                                                        loading="lazy"
+                                                    />
+                                                </a>
+                                                <div class="card__content card__content--more">
+                                                    <div class="card__item card__item--more">
+                                                        <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                            >Fames habitasse risus ultricies tortor sit</a
+                                                        >
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__time _icon-timer">22:59</p>
+                                                        <span class="card__price card__price--more">2.55 ETH</span>
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__text card__text--more">101 people are bidding</p>
+                                                        <svg
+                                                            class="card__likes-icon"
+                                                            width="18"
+                                                            height="16"
+                                                            viewBox="0 0 18 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                            />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__slide slider__slide--more swiper-slide">
+                                            <div class="card">
+                                                <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 183">
+                                                    <img
+                                                        class="card__img card__img--more"
+                                                        src="img/more/slide2.png"
+                                                        alt="#"
+                                                        width="212"
+                                                        height="355"
+                                                        loading="lazy"
+                                                    />
+                                                </a>
+                                                <div class="card__content card__content--more">
+                                                    <div class="card__item card__item--more">
+                                                        <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                            >Fames habitasse risus ultricies tortor sit</a
+                                                        >
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__time _icon-timer">22:59</p>
+                                                        <span class="card__price card__price--more">2.55 ETH</span>
+                                                    </div>
+                                                    <div class="card__item card__item--more">
+                                                        <p class="card__text card__text--more">101 people are bidding</p>
+                                                        <svg
+                                                            class="card__likes-icon"
+                                                            width="18"
+                                                            height="16"
+                                                            viewBox="0 0 18 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                            />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__control slider__control--more">
+                                        <div class="slider__button-next slider__button-next--more swiper-button-next _icon-arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="section__link">
+                                    <a class="btn btn--secondary" href="#" target="_blank" rel="nofollow noopener">Show me more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__item section__item--custom">
+                            <div class="section__item-inner section__item-inner--custom">
+                                <div class="section__dotts section__dotts--custom">
+                                    <span class="section__dott section__dott"></span>
+                                    <span class="section__dott section__dott"></span>
+                                    <span class="section__dott section__dott"></span>
+                                </div>
+                                <div class="section__image-wrap section__image-wrap--custom">
+                                    <img
+                                        class="section__img section__img--custom"
+                                        src="img/more/started.png"
+                                        alt="#"
+                                        width="448"
+                                        height="644"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div class="section__text-wrap section__text-wrap--custom">
+                                    <h2 class="title title--custom">
+                                        Get started creating <br />
+                                        & selling your NFTs
+                                    </h2>
+                                    <p class="section__text section__text--custom">
+                                        Nunc gravida faucibus netus feugiat <br />
+                                        tellus, viverra massa feugiat. Mi est sit.
+                                    </p>
+                                </div>
+                                <div class="section__link section__link--custom">
+                                    <a class="btn btn--primary" href="#" target="_blank" rel="nofollow noopener">Get started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__item section__item--more">
+                            <div class="section__item-inner section__item-inner--more">
+                                <h2 class="title title--more">Top NFT at a lower price</h2>
+                                <ul class="list list--more">
+                                    <li class="list__item list__item--more">
+                                        <div class="card card--more">
+                                            <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 183">
+                                                <img
+                                                    class="card__img card__img--more"
+                                                    src="img/more/top/top1.png"
+                                                    alt="#"
+                                                    width="120"
+                                                    height="120"
+                                                    loading="lazy"
+                                                />
+                                            </a>
+                                            <div class="card__content card__content--more">
+                                                <div class="card__item">
+                                                    <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                        >Vulputate velit viverra volutpat volutpat tristique</a
+                                                    >
+                                                </div>
+                                                <div class="card__item">
+                                                    <p class="card__time _icon-timer">22:59</p>
+                                                    <span class="card__price card__price--more">2.55 ETH</span>
+                                                </div>
+                                                <div class="card__item">
+                                                    <p class="card__text card__text--more">101 people are bidding</p>
+                                                    <svg
+                                                        class="card__likes-icon"
+                                                        width="18"
+                                                        height="16"
+                                                        viewBox="0 0 18 16"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list__item list__item--more">
+                                        <div class="card card--more">
+                                            <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 200">
+                                                <img
+                                                    class="card__img card__img--more"
+                                                    src="img/more/top/top2.png"
+                                                    alt="#"
+                                                    width="120"
+                                                    height="120"
+                                                    loading="lazy"
+                                                />
+                                            </a>
+                                            <div class="card__content card__content--more">
+                                                <div class="card__item">
+                                                    <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                        >Egestas blandit sit egestas non sed. Purus semper</a
+                                                    >
+                                                </div>
+                                                <div class="card__item">
+                                                    <p class="card__time _icon-timer">22:59</p>
+                                                    <span class="card__price card__price--more">2.55 ETH</span>
+                                                </div>
+                                                <div class="card__item">
+                                                    <p class="card__text card__text--more">101 people are bidding</p>
+                                                    <svg
+                                                        class="card__likes-icon"
+                                                        width="18"
+                                                        height="16"
+                                                        viewBox="0 0 18 16"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list__item list__item--more">
+                                        <div class="card card--more">
+                                            <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 0">
+                                                <img
+                                                    class="card__img card__img--more"
+                                                    src="img/more/top/top3.png"
+                                                    alt="#"
+                                                    width="120"
+                                                    height="120"
+                                                    loading="lazy"
+                                                />
+                                            </a>
+                                            <div class="card__content card__content--more">
+                                                <div class="card__item">
+                                                    <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                        >Id ut consequat netus nec vel amet ut porta in augue</a
+                                                    >
+                                                </div>
+                                                <div class="card__item">
+                                                    <p class="card__time _icon-timer">22:59</p>
+                                                    <span class="card__price card__price--more">2.55 ETH</span>
+                                                </div>
+                                                <div class="card__item">
+                                                    <p class="card__text card__text--more">101 people are bidding</p>
+                                                    <svg
+                                                        class="card__likes-icon"
+                                                        width="18"
+                                                        height="16"
+                                                        viewBox="0 0 18 16"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list__item list__item--more">
+                                        <div class="card card--more">
+                                            <a class="card__img-link card__img-link--more" href="#" style="--color-hue: 300">
+                                                <img
+                                                    class="card__img card__img--more"
+                                                    src="img/more/top/top4.png"
+                                                    alt="#"
+                                                    width="120"
+                                                    height="120"
+                                                    loading="lazy"
+                                                />
+                                            </a>
+                                            <div class="card__content card__content--more">
+                                                <div class="card__item">
+                                                    <a class="card__link card__link--more" href="#" target="_blank" rel="nofollow noopener"
+                                                        >Sed et nibh felis integer tellus turpin</a
+                                                    >
+                                                </div>
+                                                <div class="card__item">
+                                                    <p class="card__time _icon-timer">22:59</p>
+                                                    <span class="card__price card__price--more">2.55 ETH</span>
+                                                </div>
+                                                <div class="card__item">
+                                                    <p class="card__text card__text--more">101 people are bidding</p>
+                                                    <svg
+                                                        class="card__likes-icon"
+                                                        width="18"
+                                                        height="16"
+                                                        viewBox="0 0 18 16"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M4.83268 0.5C2.53185 0.5 0.666016 2.34667 0.666016 4.625C0.666016 6.46417 1.39518 10.8292 8.57268 15.2417C8.70125 15.3199 8.84885 15.3613 8.99935 15.3613C9.14985 15.3613 9.29745 15.3199 9.42602 15.2417C16.6035 10.8292 17.3327 6.46417 17.3327 4.625C17.3327 2.34667 15.4668 0.5 13.166 0.5C10.8652 0.5 8.99935 3 8.99935 3C8.99935 3 7.13352 0.5 4.83268 0.5Z"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="section__link">
+                                    <a class="btn btn--secondary" href="#" target="_blank" rel="nofollow noopener">Show me more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--habitant">
+                <div class="container">
+                    <div class="section__container section__container--habitant">
+                        <div class="section__image-wrap section__image-wrap--habitant">
+                            <img class="section__img" src="img/habitant.png" alt="#" width="684" height="616" loading="lazy" />
+                        </div>
+                        <div class="section__block">
+                            <p class="section__text section__text--overline">Overline</p>
+                            <h2 class="title title--habitant">Habitant tristique aliquam in vel scelerisque</h2>
+                            <p class="section__text">
+                                Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.
+                            </p>
+                            <ul class="list list--habitant">
+                                <li class="list__item">
+                                    <span class="list__icon _icon-cursus"></span>
+                                    <h3 class="list__title">Sollicitudin sapien</h3>
+                                    <p class="list__text">Cursus fermentum</p>
+                                </li>
+                                <li class="list__item">
+                                    <span class="list__icon _icon-nunc"></span>
+                                    <h3 class="list__title">Pulvinar metus</h3>
+                                    <p class="list__text">Nunc sed</p>
+                                </li>
+                            </ul>
+                            <div class="section__buttons">
+                                <a class="btn btn--primary" href="#" target="_blank" rel="nofollow noopener">Get started</a>
+                                <a class="btn btn--secondary" href="#" target="_blank" rel="nofollow noopener">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--popular">
+                <div class="container">
+                    <div class="section__container section__container--popular">
+                        <div class="section__text-wrap section__text-wrap--popular">
+                            <p class="section__text section__text--overline">Overline</p>
+                            <h2 class="title title--popular">Most popular live auctions</h2>
+                            <div class="section__buttons section__buttons--popular">
+                                <button class="btn btn--secondary btn--secondary-small _active" id="photo">Photography</button>
+                                <button class="btn btn--secondary btn--secondary-small" id="games">Games</button>
+                                <button class="btn btn--secondary btn--secondary-small" id="music">Music</button>
+                            </div>
+                        </div>
+                        <ul class="list list--popular"></ul>
+                        <button class="btn btn--secondary btn--secondary-popular">Show me more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--statistic">
+                <div class="container">
+                    <div class="section__container section__container--statistic">
+                        <ul class="list list--statistic">
+                            <li class="list__item list__item--statistic">
+                                <span class="list__icon list__icon--statistic _icon-user"></span>
+                                <div class="list__text-wrap">
+                                    <h3 class="list__title list__title--statistic"><span data-digits-counter class="list__numbers">300</span>k</h3>
+                                    <p class="list__text">Users Active</p>
+                                </div>
+                            </li>
+                            <li class="list__item list__item--statistic">
+                                <span class="list__icon list__icon--statistic _icon-artworks"></span>
+                                <div class="list__text-wrap">
+                                    <h3 class="list__title list__title--statistic">
+                                        <span data-digits-counter class="list__numbers">52</span>.<span data-digits-counter class="list__numbers"
+                                            >5</span
+                                        >k
+                                    </h3>
+                                    <p class="list__text">Artworks</p>
+                                </div>
+                            </li>
+                            <li class="list__item list__item--statistic">
+                                <span class="list__icon list__icon--statistic _icon-artists"></span>
+                                <div class="list__text-wrap">
+                                    <h3 class="list__title list__title--statistic">
+                                        <span data-digits-counter class="list__numbers">17</span>.<span data-digits-counter class="list__numbers"
+                                            >5</span
+                                        >k
+                                    </h3>
+                                    <p class="list__text">Artists</p>
+                                </div>
+                            </li>
+                            <li class="list__item list__item--statistic">
+                                <span class="list__icon list__icon--statistic _icon-wallet"></span>
+                                <div class="list__text-wrap">
+                                    <h3 class="list__title list__title--statistic">
+                                        <span data-digits-counter class="list__numbers">35</span>.<span data-digits-counter class="list__numbers"
+                                            >58</span
+                                        >k
+                                    </h3>
+                                    <p class="list__text">ETH Spent</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--cursus">
+                <div class="container">
+                    <div class="section__item section__item--cursus">
+                        <div class="section__item-inner section__item-inner--cursus">
+                            <div class="section__dotts section__dotts--cursus">
+                                <span class="section__dott section__dott"></span>
+                                <span class="section__dott section__dott"></span>
+                                <span class="section__dott section__dott"></span>
+                            </div>
+                            <div class="section__block section__block--cursus">
+                                <p class="section__text section__text--overline">Overline</p>
+                                <h2 class="title title--cursus">Cursus vitae sollicitudin donec nascetur. Join now</h2>
+                                <p class="section__text">
+                                    Donec volutpat bibendum justo, odio aenean congue est porttitor ut. Mauris vestibulum eros libero amet tincidunt.
+                                </p>
+                                <div class="section__buttons section__buttons--cursus">
+                                    <a class="btn btn--primary" href="#" target="_blank" rel="nofollow noopener">Get started</a>
+                                    <a class="btn btn--secondary" href="#" target="_blank" rel="nofollow noopener">Learn more</a>
+                                </div>
+                            </div>
+                            <ul class="list list--cursus">
+                                <li class="list__item list__item--cursus">
+                                    <div class="card card--cursus">
+                                        <img class="card__icon card__icon--cursus" src="img/cursus/icon1.png" alt="#" width="61" height="61" />
+                                        <div class="card__content card__content--cursus">
+                                            <div class="card__item card__item--cursus">
+                                                <h3 class="card__item-title card__item-title--cursus">@brook_sim</h3>
+                                                <span class="card__price card__price--cursus">4.78 ETH</span>
+                                            </div>
+                                            <div class="card__item card__item--cursus">
+                                                <p class="card__text card__text--cursus _icon-items">Items 206</p>
+                                                <p class="card__text card__text--cursus _icon-collection">Collection 12</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--cursus">
+                                    <div class="card card--cursus">
+                                        <img class="card__icon card__icon--cursus" src="img/cursus/icon2.png" alt="#" width="61" height="61" />
+                                        <div class="card__content card__content--cursus">
+                                            <div class="card__item card__item--cursus">
+                                                <h3 class="card__item-title card__item-title--cursus">@brook_sim</h3>
+                                                <span class="card__price card__price--cursus">2.55 ETH</span>
+                                            </div>
+                                            <div class="card__item card__item--cursus">
+                                                <p class="card__text card__text--cursus _icon-items">Items 24</p>
+                                                <p class="card__text card__text--cursus _icon-collection">Collection 24</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--cursus">
+                                    <div class="card card--cursus">
+                                        <img class="card__icon card__icon--cursus" src="img/cursus/icon3.png" alt="#" width="61" height="61" />
+                                        <div class="card__content card__content--cursus">
+                                            <div class="card__item card__item--cursus">
+                                                <h3 class="card__item-title card__item-title--cursus">@marvinmckin</h3>
+                                                <span class="card__price card__price--cursus">7.55 ETH</span>
+                                            </div>
+                                            <div class="card__item card__item--cursus">
+                                                <p class="card__text card__text--cursus _icon-items">Items 479</p>
+                                                <p class="card__text card__text--cursus _icon-collection">Collection 24</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--cursus">
+                                    <div class="card card--cursus">
+                                        <img class="card__icon card__icon--cursus" src="img/cursus/icon4.png" alt="#" width="61" height="61" />
+                                        <div class="card__content card__content--cursus">
+                                            <div class="card__item card__item--cursus">
+                                                <h3 class="card__item-title card__item-title--cursus">@esther_howard</h3>
+                                                <span class="card__price card__price--cursus">5.31 ETH</span>
+                                            </div>
+                                            <div class="card__item card__item--cursus">
+                                                <p class="card__text card__text--cursus _icon-items">Items 387</p>
+                                                <p class="card__text card__text--cursus _icon-collection">Collection 10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list__item list__item--cursus">
+                                    <div class="card card--cursus">
+                                        <img class="card__icon card__icon--cursus" src="img/cursus/icon1.png" alt="#" width="61" height="61" />
+                                        <div class="card__content card__content--cursus">
+                                            <div class="card__item card__item--cursus">
+                                                <h3 class="card__item-title card__item-title--cursus">@brook_sim</h3>
+                                                <span class="card__price card__price--cursus">2.55 ETH</span>
+                                            </div>
+                                            <div class="card__item card__item--cursus">
+                                                <p class="card__text card__text--cursus _icon-items">Items 24</p>
+                                                <p class="card__text card__text--cursus _icon-collection">Collection 24</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--gallery">
+                <div class="slider slider--gallery swiper">
+                    <div class="slider__wrapper swiper-wrapper">
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 40">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image1.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">1.51 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image2.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">3.25 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image3.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">3.62 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image4.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">3.82 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 215">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image5.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">2.77 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 180">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image6.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">1.61 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 240">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image7.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">2.29 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 140">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image8.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">2.03 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 140">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image9.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">3.69 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image10.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">1.49 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 170">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image11.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">3.21 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 230">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image12.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">2.22 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image13.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">2.82 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 140">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image14.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">1.49 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image15.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">1.57 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image16.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">2.88 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 248">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image17.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">3.51 ETH</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slider__slide--gallery swiper-slide">
+                            <div class="section__icon-wrap section__icon-wrap--gallery" style="--color-hue: 230">
+                                <a class="section__icon-link" href="#" target="_blank" rel="nofollow noopener">
+                                    <img
+                                        class="section__icon section__icon--gallery"
+                                        src="img/gallery/image18.png"
+                                        alt="#"
+                                        width="89"
+                                        height="89"
+                                        loading="lazy"
+                                    />
+                                </a>
+                                <p class="section__icon-text">1.81 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="footer__item">
+                        <a class="logo" href="#home">
+                            <svg class="logo__icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 30.6C5.63333 30.6 10.2 26.0332 10.2 20.4C10.2 14.7667 5.63333 10.2 0 10.2V17.3399C1.68998 17.3399 3.05998 18.7099 3.05998 20.4C3.05998 22.09 1.68998 23.46 0 23.46V30.6Z"
+                                    fill="#76DECC"
+                                />
+                                <path
+                                    d="M33.9997 13.6001C32.2567 13.0479 30.4005 12.75 28.4747 12.75C18.3816 12.75 10.1997 20.9321 10.1997 31.025C10.1997 32.0381 10.2821 33.0319 10.4406 34H21.7955C21.3901 33.0913 21.1648 32.0845 21.1648 31.025C21.1648 26.9878 24.4375 23.715 28.4747 23.715C30.6812 23.715 32.6593 24.6927 33.9997 26.2384V13.6001Z"
+                                    fill="#EA6CBC"
+                                />
+                                <path
+                                    d="M1.79346 0C2.63911 7.64992 9.12477 13.6001 17.0001 13.6001C24.8753 13.6001 31.361 7.64992 32.2067 0H21.2649C20.5894 1.69339 18.9344 2.88999 17.0001 2.88999C15.0657 2.88999 13.4108 1.69339 12.7352 0H1.79346Z"
+                                    fill="#2A27C9"
+                                />
+                            </svg>
+                            <p class="logo__text">NFT Market</p>
+                        </a>
+                        <div class="footer__links">
+                            <a class="footer__link" href="#" target="_blank" rel="nofollow noopener">Support</a>
+                            <a class="footer__link" href="#" target="_blank" rel="nofollow noopener">Term of service</a>
+                            <a class="footer__link" href="#" target="_blank" rel="nofollow noopener">License</a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <ul class="list list--footer">
+                            <li class="list__item list__item--footer">
+                                <a class="list__link" href="#" target="_blank" rel="nofollow noopener">Auctions</a>
+                            </li>
+                            <li class="list__item list__item--footer">
+                                <a class="list__link" href="#" target="_blank" rel="nofollow noopener">Roadmap</a>
+                            </li>
+                            <li class="list__item list__item--footer">
+                                <a class="list__link" href="#" target="_blank" rel="nofollow noopener">Discover</a>
+                            </li>
+                            <li class="list__item list__item--footer">
+                                <a class="list__link" href="#" target="_blank" rel="nofollow noopener">Community</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn--primary btn--primary-footer" type="button" data-name="popup-account">My account</button>
+                        <div class="socials">
+                            <a class="socials__link _icon-facebook" href="#" target="_blank" rel="noopener"></a>
+                            <a class="socials__link _icon-linkedIn" href="#" target="_blank" rel="noopener"></a>
+                            <a class="socials__link _icon-github" href="#" target="_blank" rel="noopener"></a>
+                            <a class="socials__link _icon-twitter" href="#" target="_blank" rel="noopener"></a>
+                            <a class="socials__link _icon-instagram" href="#" target="_blank" rel="noopener"></a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__text">
+                            Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, sed egestas in. Id nam semper dolor tellus
+                            vulputate eget turpis.
+                        </p>
+                        <form class="form form--email" action="" method="get">
+                            <div class="form__item form__item--email">
+                                <input class="form__input form__input--email" type="email" required />
+                                <label class="form__label form__label--email">Newsletter</label>
+                            </div>
+                            <button class="form__button form__button--email" type="submit">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script type="module" src="js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "image": "../img/popular/image2.png",
+        "title": "Diam purus sagittis nisl erat mauris",
+        "bidding": "33"
+    },
+    {
+        "image": "../img/popular/image6.png",
+        "title": "Odio lacus neque ultrices purus eget",
+        "bidding": "60"
+    },
+    {
+        "image": "../img/popular/image1.png",
+        "title": "Faucibus habitasse at et platea massa mauris",
+        "bidding": "10"
+    },
+    {
+        "image": "../img/popular/image4.png",
+        "title": "Velit, fusce id non dui amet amet maecenas",
+        "bidding": "100"
+    },
+    {
+        "image": "../img/popular/image3.png",
+        "title": "Nascetur mauris viverra vel id id sem leo",
+        "bidding": "99"
+    },
+    {
+        "image": "../img/popular/image5.png",
+        "title": "Tellus duis neque fringilla pulvinar gravida",
+        "bidding": "41"
+    }
+]
